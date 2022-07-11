@@ -5,6 +5,9 @@
 
 Notre client, qui fabrique des appareils d’Imagerie à Résonance Magnétique (IRM), souhaite mettre à jour sa méthode de segmentation automatiquement d’organes dans le cadre du diagnostic et du traitement médical assisté par ordinateur. Les données en question, sont des tranches de scans IRM. Le but étant de détecter les organes présents selon la zone observée.
 
+SUJET D'ETUDE
+Nous souhaitons segmenter les cellules d'organes au sein d'images médicales. Les images consistent en des IRM, où l'estomac, le gros intestin et l'intestin grêle peuvent être présents. Il s'agit d'une tâche de segmentation multiétiquette car toutes les classes peuvent être présentes dans une image.
+
 Nous testons ici plusieurs modèles: 
 * le Fully Convolutional Network **U-Net** de la librairie tensorflow/keras **segmentation-models**
 * le TransUNet de la librairie **transunet** qui combine les atouts d'auto attention d'un Vision transformer avec un U-Net
